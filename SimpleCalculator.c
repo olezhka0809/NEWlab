@@ -36,57 +36,84 @@ int main() {
     char p = '%';
     double num1, num2, rez = 0;
     printf("Functional: \n");
-    printf(" + - Aduanre \n");
+    printf(" + - Adunare \n");
     printf(" - - Scadere \n");
     printf(" * - Inmultire \n");
     printf(" / - Impartire \n");
     printf(" r - Radical\n");
     printf(" l - Logaritm\n");
-    printf( " %c - Procent \n", p);
-
+    printf(" %c - Procent \n", p);
+    printf(" c - Reseteaza rezultatul la 0 si permite suprapunerea rezultatelor\n");
+    printf(" q - Iesire\n");
 
     while (1) {   
-        printf("Introdu n1: ");
-        scanf("%lf", &num1);
-        printf("Introdu n2: ");
-        scanf("%lf", &num2);
+        printf("Introdu operatia : ");
         scanf(" %c", &c); 
         
         switch (c) {
             case '+':
-                rez = addition(num1, num2);
-                printf("\n%.2lf\n", rez);
-                rez =0;
-                break;
             case '-':
-                rez = substraction(num1, num2);
-                printf("\n%.2lf\n", rez);
-                rez =0;
-                break;
             case '*':
-                rez = multiplication(num1, num2);
-                printf("\n%.2lf\n", rez);
-                rez =0;
-                break;
             case '/':
-                rez = division(num1, num2);
-                printf("\n%.2lf\n", rez);
-                rez =0;
+            case '%':
+                if (rez == 0) {
+                    printf("Introdu primul numar: ");
+                    scanf("%lf", &num1);
+                } else {
+                    num1 = rez;
+                }
+                printf("Introdu al doilea numar: ");
+                scanf("%lf", &num2);
+                switch (c) {
+                    case '+':
+                        rez = addition(num1, num2);
+                        printf("\n%.2lf + %.2lf = %.2lf  \n", num1, num2, rez);
+                        break;
+                    case '-':
+                        rez = substraction(num1, num2);
+                        printf("\n%.2lf - %.2lf = %.2lf  \n", num1, num2, rez);
+                        break;
+                    case '*':
+                        rez = multiplication(num1, num2);
+                        printf("\n%.2lf * %.2lf = %.2lf  \n", num1, num2, rez);
+                        break;
+                    case '/':
+                        rez = division(num1, num2);
+                        printf("\n%.2lf / %.2lf = %.2lf  \n", num1, num2, rez);
+                        break;
+                    case '%':
+                        rez = procentaj(num1, num2);
+                        printf("\n%.2lf %c %.2lf = %.2lf  \n", num1, c, num2, rez);
+                        break;
+                }
                 break;
             case 'r':
+                if (rez == 0) {
+                    printf("Introdu numarul: ");
+                    scanf("%lf", &num1);
+                } else {
+                    num1 = rez;
+                }
                 rez = Squareroots(num1);
-                printf("\n%.2lf\n", rez);
-                rez =0;
+                printf("\nradical %.2lf = %.2lf \n", num1, rez);
                 break;
             case 'l':
+                if (rez == 0) {
+                    printf("Introdu numarul: ");
+                    scanf("%lf", &num1);
+                } else {
+                    num1 = rez;
+                }
                 rez = Logarithmic(num1);
-                printf("\n%.2lf\n", rez);
-                rez =0;
+                printf("\nlogaritm %.2lf = %.2lf \n", num1, rez);
                 break;
-            case '%':
-                rez = procentaj(num1, num2);
-                printf("\n%.2lf\n", rez);
+            case 'c':
+                rez = 0;
+                printf("Rezultatul resetat la 0.\n");
                 break;
+            case 'q':
+                printf("Iesire din program.\n");
+                exit(0);
             default:
                 printf("Caracter necunoscut!\n");
                 break;
