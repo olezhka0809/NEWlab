@@ -1,6 +1,26 @@
-Transilvania
+Banca_Centrala
 1 Ana_Maria 1987654321001 ana123 parola123 1 1500
 2 ana123 parola123 Ana_Maria 1987654321001 700
 3 ana123 maria456 Ana_Maria George_Smith 200
 4 ana123 parola123 Ana_Maria 1987654321001 300
+1 George_Smith 1122334455667 george123 pass456 1 2000
+1 Maria_Popescu 1234567890123 maria123 parola456 1 3000
+1 Ion_Ionescu 9876543210123 ion123 parola789 1 2500
+1 Elena_Gheorghe 7777777777777 elena123 pass987 1 1800
+1 Andrei_Petrica 5555555555555 andrei123 pass123 1 2200
+2 george123 pass456 George_Smith 1122334455667 500
+2 maria123 parola456 Maria_Popescu 1234567890123 800
+2 ion123 parola789 Ion_Ionescu 9876543210123 1000
+3 ana123 george123 Ana_Maria George_Smith 300
+3 ana123 ion123 Ana_Maria Ion_Ionescu 400
+3 maria123 ana123 Maria_Popescu Ana_Maria 200
+3 george123 maria123 George_Smith Maria_Popescu 100
+3 ion123 george123 Ion_Ionescu George_Smith 150
+4 ana123 parola123 Ana_Maria 1987654321001 700
+4 george123 pass456 George_Smith 1122334455667 1000
+4 maria123 parola456 Maria_Popescu 1234567890123 1500
+4 ion123 parola789 Ion_Ionescu 9876543210123 2000
+4 elena123 pass987 Elena_Gheorghe 7777777777777 800
+4 andrei123 pass123 Andrei_Petrica 5555555555555 1100
 0
+
