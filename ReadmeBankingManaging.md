@@ -18,7 +18,7 @@ Programul primește comenzi de la utilizator dintr-un fișier de test și efectu
 ```gcc proiect_banca.c -o proiect_banca```
 2. Rulează executabilul generat.
 ```./proiect_banca fisierTest```
-3. În fișierul de test (fisierTest), introdu comenzile corespunzătoare pentru a efectua operațiile dorite. Asigură-te că fiecare comandă este introdusă într-o linie separată conform formatului specificat în codul sursă.
+3. În fișierul de test `fisierTest.txt`, introdu comenzile corespunzătoare pentru a efectua operațiile dorite. Asigură-te că fiecare comandă este introdusă într-o linie separată conform formatului specificat în codul sursă.
 
 ## Rezultat
 Programul va afișa rezultatul fiecărei operații efectuate și va gestiona în mod corespunzător erorile întâmpinate.
