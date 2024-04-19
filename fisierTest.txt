@@ -1,0 +1,6 @@
+Transilvania
+1 Ana_Maria 1987654321001 ana123 parola123 1 1500
+2 ana123 parola123 Ana_Maria 1987654321001 700
+3 ana123 maria456 Ana_Maria George_Smith 200
+4 ana123 parola123 Ana_Maria 1987654321001 300
+0
