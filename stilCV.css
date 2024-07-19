@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(167, 202, 233);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.header{
+    text-align:center ;
+}
+
+.avatar{
+    width: 300 px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.header_title {
+    font-size: 28px;
+}
+.header_subtitle {
+    color: rgb(9, 80, 195);
+
+}
+
+main{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.skills ol{
+    list-style: none;
+}
+
+.separator{
+    width: 50%;
+    height: auto;
+    background-color: rgb(18, 17, 16);
+}
+
+.video {
+    width: auto; /* Sau orice altă valoare, de ex. 50%, 600px */
+    height: auto; /* Pentru a menține proporțiile */
+    border: 2px solid #000; /* Adaugă o margine neagră */
+    border-radius: 10px; /* Colțuri rotunjite */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adaugă o umbră */
+}
+
+.ed_table{
+    border-collapse: collapse;
+    width: 100%;
+
+}
+.ed_table th, .ed_table td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.Quote{
+    font-size: 32px;
+
+}
+
+.form{
+    width: 600px;
+    margin: 0 auto;
+    border: 2px solid black;
+    
+    
+}
+
+.form input{
+    width: 100%;
+}
+
+.submit{
+    display: block;
+    margin: 0 auto;
+}
+
+.control--text {
+    width: 70%; /* Lățimea va fi de 100% din containerul părinte */
+    height: 150px; /* Înălțimea fixă de 150px */
+    border: 2px solid #007bff; /* Bordură albastră */
+    border-radius: 4px; /* Colțuri rotunjite */
+    padding: 8px; /* Spațiu interior */
+    font-size: 16px; /* Dimensiunea fontului */
+    box-sizing: border-box; /* Include padding și bordură în dimensiuni */
+}
+.form_control{
+    width: 70%;
+}
+
+.contacts{
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
